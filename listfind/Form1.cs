@@ -24,7 +24,7 @@ namespace listfind
         private void Button3_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Text files|*.txt|Comma-seperated values|*.csv|All files|*.*";
+            ofd.Filter = "Text files|*.txt|All files|*.*";
 
             ofd.ShowDialog();
 
@@ -50,6 +50,8 @@ namespace listfind
         Timer T;
         int round_points = 0;
         int total_points;
+        List<long> running_points = new List<long>();
+        List<Set> game_sets = new List<Set>();
 
         int StartRound()
         {
@@ -85,10 +87,13 @@ namespace listfind
         private void Button1_Click(object sender, EventArgs e)
         {
             label4.Text = "Round " + round.ToString();
+            
             round++;
             answer = StartRound();
+            running_points.Add(round_points);
             round_points = 40;
             T.Start();
+            button1.Enabled = false;
         }
 
         private void T_Tick(object sender, EventArgs e)
@@ -103,26 +108,34 @@ namespace listfind
 
         private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            T.Stop();
+
             if (listBox1.SelectedIndex == answer)
             {
                 total_points += round_points;
                 MessageBox.Show("This is correct!", "Correct", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                T.Stop();
             }
             else
             {
                 MessageBox.Show("This is incorrect!", "Incorrect", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 round_points = 0;
-                T.Stop();
             }
 
-
+            button1.Enabled = true;
+            label1.Text = round_points.ToString();
             label2.Text = total_points.ToString();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            T.Stop();
+            game_sets.Add(new Set(running_points, total_points, round));
 
+            round = 0;
+            round_points = 0;
+            running_points = new List<long>();
+            total_points = 0;
+            label3.Text = "Reset";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -130,6 +143,26 @@ namespace listfind
             T = new Timer();
             T.Tick += T_Tick;
             T.Interval = 100;
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            StatsForm sf = new StatsForm();
+            sf.sets = game_sets;
+            sf.ShowDialog();
+        }
+    }
+
+    public class Set
+    {
+        public List<long> round_scores { get; set; }
+        public long set_points { get; set; }
+        public long set_rounds { get; set; }
+        public Set(List<long> scores, long totalpoints, long rounds)
+        {
+            round_scores = scores;
+            set_points = totalpoints;
+            set_rounds = rounds;
         }
     }
 }

@@ -7,3 +7,5 @@ C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfi
 C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.csproj.CoreCompileInputs.cache
 C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.exe
 C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.pdb
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.csprojAssemblyReference.cache
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.StatsForm.resources
