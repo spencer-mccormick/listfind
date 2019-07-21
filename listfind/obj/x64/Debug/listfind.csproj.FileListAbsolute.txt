@@ -1,0 +1,10 @@
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\bin\x64\Debug\listfind.exe.config
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\bin\x64\Debug\listfind.exe
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\bin\x64\Debug\listfind.pdb
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.csprojAssemblyReference.cache
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.Form1.resources
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.Properties.Resources.resources
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.csproj.GenerateResource.cache
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.csproj.CoreCompileInputs.cache
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.exe
+C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Debug\listfind.pdb
