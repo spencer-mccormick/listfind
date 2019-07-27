@@ -9,3 +9,15 @@ C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfi
 C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.pdb
 C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.csprojAssemblyReference.cache
 C:\Users\Spencer McCormick\source\repos\listfind\listfind\obj\x64\Release\listfind.StatsForm.resources
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\bin\x64\Release\listfind.exe.config
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\bin\x64\Release\listfind.exe
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\bin\x64\Release\listfind.pdb
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.csprojAssemblyReference.cache
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.Form1.resources
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.ListSizeForm.resources
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.Properties.Resources.resources
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.StatsForm.resources
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.csproj.GenerateResource.cache
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.csproj.CoreCompileInputs.cache
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.exe
+C:\Users\Spencer McCormick\Documents\GitHub\listfind\listfind\obj\x64\Release\listfind.pdb

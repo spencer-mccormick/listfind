@@ -52,10 +52,10 @@ namespace listfind
         int total_points;
         List<long> running_points = new List<long>();
         List<Set> game_sets = new List<Set>();
+        int max = 15;
 
         int StartRound()
         {
-            const int max = 15;
 
             listBox1.Items.Clear();
             listBox1.ClearSelected();
@@ -91,7 +91,7 @@ namespace listfind
             round++;
             answer = StartRound();
             running_points.Add(round_points);
-            round_points = 40;
+            round_points = 160;
             T.Start();
             button1.Enabled = false;
         }
@@ -150,6 +150,24 @@ namespace listfind
             StatsForm sf = new StatsForm();
             sf.sets = game_sets;
             sf.ShowDialog();
+        }
+
+        private void ChangeLisSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListSizeForm lsf = new ListSizeForm();
+            lsf.ListSize = max;
+            lsf.ShowDialog();
+
+            max = lsf.ListSize;
+        }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ListSizeForm lsf = new ListSizeForm();
+            lsf.ListSize = max;
+            lsf.ShowDialog();
+
+            max = lsf.ListSize;
         }
     }
 
